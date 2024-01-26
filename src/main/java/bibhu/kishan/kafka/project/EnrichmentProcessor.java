@@ -15,7 +15,7 @@ public class EnrichmentProcessor {
         System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
         String rawVideoTopic = "rawVideoTopic";
         String enrichedVideoTopic = "enrichedVideoTopic";
-        String groupId = "yourGroupId"; // Provide your desired group ID
+        String groupId = "VideoConsumer"; // Provide your desired group ID
         Consumer<String, byte[]> consumer = KafkaConsumerInstance.createConsumer(groupId); // Instantiate your Kafka consumer
         Producer<String, byte[]> producer = KafkaProducerInstance.createProducer(); // Instantiate your Kafka producer
 
